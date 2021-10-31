@@ -1,0 +1,45 @@
+$animation-distance: 150px;
+
+@keyframes l-r {
+	from {
+		opacity: 0;
+		transform: translateX(-$animation-distance);
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes r-l {
+	from {
+		opacity: 0;
+		transform: translateX($animation-distance);
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes b-t {
+	from {
+		opacity: 0;
+		transform: translateY($animation-distance);
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes t-b {
+	from {
+		opacity: 0;
+		transform: translateY(-$animation-distance);
+	}
+
+	to {
+		opacity: 1;
+	}
+}
