@@ -1,0 +1,25 @@
+@import '../../../scss/config.scss';
+
+.container {
+    padding: 75px 0;
+    @include flex(space-around);
+
+    .content {
+        text-align: center;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        flex-direction: row;
+
+        .content {
+            margin-left: 50px;
+            text-align: left;
+
+            > .description {
+                text-align: left;
+            }
+        }
+    }
+}
