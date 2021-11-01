@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
     return (
         <div>
             <Head>
-                <title>Welcome to company!</title>
+                <title>Welcome to Metro!</title>
 
                 {/* font-family */}
                 <link

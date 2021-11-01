@@ -1,19 +1,19 @@
-import style from './style.module.scss';
 import Fade from 'react-reveal/Fade';
+import { Mail, Phone, Instagram } from 'react-feather';
+import style from './style.module.scss';
 
 const Footer = () => {
     return (
         <footer className={style.container}>
-            <div className={`${style['footer-company']} ${style.section}`}>
+            <div className={`${style['footer-metro']} ${style.section}`}>
                 <Fade top>
                     <h1 className={`${style.title} ${style.logo} logo`}>
-                        Company
+                        Metro
                     </h1>
                 </Fade>
                 <Fade bottom>
                     <p className={`${style.description} description`}>
-                        This company is a tech focused company. We can help you
-                        with any electronic equipment.
+                        -- Description --
                     </p>
                 </Fade>
             </div>
@@ -27,14 +27,11 @@ const Footer = () => {
                         <a href="/">
                             <li>Home</li>
                         </a>
-                        <a href="/services">
-                            <li>Services</li>
+                        <a href="/features">
+                            <li>Features</li>
                         </a>
-                        <a href="/equipments">
-                            <li>Equipments</li>
-                        </a>
-                        <a href="/contact">
-                            <li>Opening hours</li>
+                        <a href="/downloads">
+                            <li>Downloads</li>
                         </a>
                         <a href="/contact">
                             <li>Contact</li>
@@ -50,24 +47,17 @@ const Footer = () => {
                 <Fade bottom cascade>
                     <ul>
                         <li>
-                            <i
-                                className={`fas fa-map-marker-alt ${style.icon}`}
-                            ></i>
-                            <p>CBD Belapur</p>
+                            <Mail className={style.icon} />
+                            <p>n1shnt@metro.com</p>
                         </li>
 
                         <li>
-                            <i className={`fas fa-envelope ${style.icon}`}></i>
-                            <p>n1shnt@company.com</p>
+                            <Instagram className={style.icon} />
+                            <p>@metro</p>
                         </li>
 
                         <li>
-                            <i className={`fab fa-instagram ${style.icon}`}></i>
-                            <p>@company</p>
-                        </li>
-
-                        <li>
-                            <i className={`fas fa-phone-alt ${style.icon}`}></i>
+                            <Phone className={style.icon} />
                             <p>+91 900-429-2863</p>
                         </li>
                     </ul>
@@ -76,7 +66,7 @@ const Footer = () => {
 
             <Fade top>
                 <p className={style.copyright}>
-                    ©{new Date().getFullYear()} Copyright: Company.com
+                    ©{new Date().getFullYear()} Copyright: metro.com
                 </p>
             </Fade>
         </footer>
