@@ -6,7 +6,7 @@ const Equipments = () => {
         <div className={style.container} id="equipments">
             <Fade bottom>
                 <img
-                    src="https://imgur.com/fgwEyqs.png"
+                    src="https://i.stack.imgur.com/y9DpT.jpg"
                     className="icon"
                     alt="equipments"
                 />
@@ -14,7 +14,7 @@ const Equipments = () => {
 
             <Fade bottom cascade>
                 <div className={style.content}>
-                    <h1 className="title">Our equipments</h1>
+                    <h1 className="title">Feature 1</h1>
 
                     <p className={`description ${style.description}`}>
                         We work with any type of equipment, including the modern

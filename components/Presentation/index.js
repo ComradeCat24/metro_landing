@@ -7,7 +7,7 @@ const Presentation = () => {
             <h1 className="title">Welcome to Metro!</h1>
 
             <p className={`description ${style.description}`}>
-                this is a <span>Description</span>!
+                <span>Description</span> Here!
             </p>
 
             <a href="#contact">

@@ -1,8 +1,10 @@
-@import '../../../scss/config.scss';
+@import '../../scss/config.scss';
 
 .container {
-    padding: 20vh 0;
+    height: 100vh;
     @include flex(space-around);
+
+    border-bottom: $default-border;
 
     .content {
         text-align: center;

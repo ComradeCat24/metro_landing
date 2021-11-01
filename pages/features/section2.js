@@ -1,4 +1,4 @@
-import style from './style.module.scss';
+import style from './styleRev.module.scss';
 import Fade from 'react-reveal/Fade';
 
 const Services = () => {
@@ -6,7 +6,7 @@ const Services = () => {
         <div className={style.container} id="services">
             <Fade bottom>
                 <img
-                    src="https://imgur.com/8eYakLA.png"
+                    src="https://i.stack.imgur.com/y9DpT.jpg"
                     className="icon"
                     alt="services"
                 />
@@ -14,7 +14,7 @@ const Services = () => {
 
             <Fade bottom cascade>
                 <div className={style.content}>
-                    <h1 className="title">Company services</h1>
+                    <h1 className="title">Feature 2</h1>
 
                     <p className={`description ${style.description}`}>
                         We from Company work hard to solve the variety of our
