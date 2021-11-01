@@ -1,0 +1,23 @@
+@import '../../scss/config.scss';
+@import '../../scss/animation.scss';
+
+.container {
+    border-bottom: 1px solid #ccc;
+    @include flex();
+
+    height: 100vh;
+    background: #fafafa;
+
+    > h1 {
+        animation: r-l 1s ease-in-out;
+    }
+    > .description {
+        text-align: justify;
+        animation: l-r 1s ease-in-out;
+        margin-bottom: 50px;
+    }
+
+    > button {
+        animation: b-t 1s ease-in-out;
+    }
+}

@@ -25,16 +25,24 @@ const Footer = () => {
                 <ul>
                     <Fade bottom cascade>
                         <a href="/">
-                            <li>Home</li>
+                            <li>
+                                <i className={style.icon}>/</i>Home
+                            </li>
                         </a>
                         <a href="/features">
-                            <li>Features</li>
+                            <li>
+                                <i className={style.icon}>/</i>Features
+                            </li>
                         </a>
                         <a href="/downloads">
-                            <li>Downloads</li>
+                            <li>
+                                <i className={style.icon}>/</i>Downloads
+                            </li>
                         </a>
                         <a href="/contact">
-                            <li>Contact</li>
+                            <li>
+                                <i className={style.icon}>/</i>Contact
+                            </li>
                         </a>
                     </Fade>
                 </ul>
