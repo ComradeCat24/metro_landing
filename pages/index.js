@@ -1,5 +1,5 @@
 import Header from '../components/Header';
-import Presentation from '../components/Presentation';
+import Presentation from './home/section1';
 import Footer from '../components/Footer';
 
 const index = () => {

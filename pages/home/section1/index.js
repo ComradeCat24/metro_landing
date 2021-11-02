@@ -1,5 +1,4 @@
 import style from './style.module.scss';
-import Fade from 'react-reveal/Fade';
 
 const Presentation = () => {
     return (
@@ -10,7 +9,7 @@ const Presentation = () => {
                 <span>Description</span> Here!
             </p>
 
-            <a href="#contact">
+            <a href="/downloads">
                 <button className="btn">Download Now</button>
             </a>
         </div>

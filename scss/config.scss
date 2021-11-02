@@ -1,5 +1,5 @@
 $font-family: Inter, Fira Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-	Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 $black: #264653;
 $main: #29c5ec;
@@ -11,90 +11,90 @@ $default-border: 1px solid #ccc;
 $border-radius: 2.5px;
 
 @mixin title($mobile: false) {
-	font-size: 1.7em;
-	letter-spacing: 0.75px;
-	font-weight: 900;
-	margin-bottom: 25px;
+    font-size: 1.7em;
+    letter-spacing: 0.75px;
+    font-weight: 900;
+    margin-bottom: 25px;
 
-	@if $mobile {
-		font-size: 1.35em;
-		margin-bottom: 15px;
-	}
+    @if $mobile {
+        font-size: 1.35em;
+        margin-bottom: 15px;
+    }
 }
 
 @mixin description($mobile: false, $align: center) {
-	text-align: $align;
-	opacity: 0.85;
-	font-size: 1em;
-	line-height: 33px;
-	max-width: 100%;
+    text-align: $align;
+    opacity: 0.85;
+    font-size: 1em;
+    line-height: 33px;
+    max-width: 100%;
 
-	> span {
-		color: $main;
-	}
+    > span {
+        color: $main;
+    }
 
-	@if $mobile {
-		font-size: 0.9em;
-		margin: 0 $default-spacing;
-	}
+    @if $mobile {
+        font-size: 0.9em;
+        margin: 0 $default-spacing;
+    }
 
-	@media (min-width: 900px) {
-		max-width: 500px;
-	}
+    @media (min-width: 900px) {
+        max-width: 550px;
+    }
 }
 
 @mixin icon($size, $margin: true) {
-	width: $size;
-	background-size: cover;
+    width: $size;
+    background-size: cover;
 
-	@if $margin {
-		margin-bottom: 75px;
-	}
+    @if $margin {
+        margin-bottom: 75px;
+    }
 }
 
 @mixin button($mobile: false) {
-	cursor: pointer;
-	background: $main;
-	color: #fff;
-	font-weight: 500;
-	letter-spacing: 0.35px;
-	border-radius: $border-radius;
+    cursor: pointer;
+    background: $main;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+    border-radius: $border-radius;
 
-	box-shadow: 5px 5px 15px rgba($main, 0.5);
+    box-shadow: 5px 5px 15px rgba($main, 0.5);
 
-	padding: 10px 40px;
-	transition: background 0.15s ease-in-out;
+    padding: 10px 40px;
+    transition: background 0.15s ease-in-out;
 
-	font-size: 1em;
+    font-size: 1em;
 
-	@if $mobile {
-		font-size: 0.9em;
-	}
+    @if $mobile {
+        font-size: 0.9em;
+    }
 
-	&:hover {
-		background: lighten($main, 10);
-	}
+    &:hover {
+        background: lighten($main, 10);
+    }
 }
 
 @mixin shadow($color: $black, $quantity: 0.5) {
-	box-shadow: 5px 5px 15px rgba($color, $quantity);
+    box-shadow: 5px 5px 15px rgba($color, $quantity);
 }
 
 @mixin flex($justify: center, $align: center, $direction: column) {
-	display: flex;
-	justify-content: $justify;
-	align-items: $align;
-	flex-direction: $direction;
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
 }
 
 @mixin addAnimation($element_name, $animation_name, $elements_number) {
-	$counter: 0;
+    $counter: 0;
 
-	@for $i from 1 through $elements_number {
-		&:nth-child(#{$i}) {
-			animation: $animation_name #{0.5 + $counter}s ease-in-out;
-		}
+    @for $i from 1 through $elements_number {
+        &:nth-child(#{$i}) {
+            animation: $animation_name #{0.5 + $counter}s ease-in-out;
+        }
 
-		$counter: $counter + 0.15;
-	}
+        $counter: $counter + 0.15;
+    }
 }
