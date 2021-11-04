@@ -4,7 +4,7 @@ import style from './style.module.scss';
 const RightNav = () => {
     const [open, setOpen] = useState(false);
 
-    const burger = () => (
+    const Burger = () => (
         <div
             className={`burger burger-slide ${open && 'open'}`}
             onClick={() => setOpen(!open)}
@@ -16,7 +16,7 @@ const RightNav = () => {
     return (
         <>
             {/* Menu */}
-            {burger()}
+            <Burger />
 
             <ul
                 className={`${style['nav-list']} ${

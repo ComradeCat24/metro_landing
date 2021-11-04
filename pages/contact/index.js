@@ -9,7 +9,7 @@ const Contact = () => {
     return (
         <main>
             <Header />
-            <section className={style.container} id="contact">
+            <section className={style.container}>
                 <div className={style.content}>
                     <Message />
                     <ContactData />

@@ -1,8 +1,10 @@
 @import '../../scss/config.scss';
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     @include flex(space-around);
+
+    // border-bottom: $default-border;
 
     .content {
         text-align: center;
@@ -10,7 +12,20 @@
 }
 
 @media (min-width: 900px) {
-    .container {
+    .container.notreversed {
+        flex-direction: row;
+
+        .content {
+            margin-right: 50px;
+            text-align: right;
+
+            > .description {
+                text-align: right;
+            }
+        }
+    }
+
+    .container.reversed {
         flex-direction: row-reverse;
 
         .content {

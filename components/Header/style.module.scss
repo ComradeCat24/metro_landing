@@ -2,79 +2,79 @@
 @import '../../scss/animation.scss';
 
 .header {
-	z-index: 9;
-	position: fixed;
-	background: #fafafa;
-	width: 100vw;
-	max-height: 70px;
-	border-bottom: $default-border;
-	@include shadow($quantity: 0.1);
+    z-index: 9;
+    position: fixed;
+    background: #fafafa;
+    width: 100vw;
+    max-height: 70px;
+    border-bottom: $default-border;
+    @include shadow($quantity: 0.1);
 
-	@include flex(space-between, $direction: row);
-	padding: 25px $default-spacing;
+    @include flex(space-between, $direction: row);
+    padding: 25px $default-spacing;
 
-	h1 {
-		animation: l-r 1s ease-in-out;
-	}
+    h1 {
+        animation: l-r 1s ease-in-out;
+    }
 
-	> ul {
-		font-size: 0.9em;
-		display: flex;
-		flex-flow: row nowrap;
+    > ul {
+        font-size: 0.9em;
+        display: flex;
+        flex-flow: row nowrap;
 
-		a {
-			@include addAnimation(&, t-b, 5);
-		}
+        a {
+            @include addAnimation(&, t-b, 5);
+        }
 
-		li {
-			padding: 20px $default-spacing;
+        li {
+            padding: 20px $default-spacing;
 
-			&:active {
-				border-top: $default-border;
-				border-bottom: $default-border;
-				box-shadow: inset 2px 2px 5px rgba($black, 0.05);
-			}
-		}
+            &:active {
+                border-top: $default-border;
+                border-bottom: $default-border;
+                box-shadow: inset 2px 2px 5px rgba($black, 0.05);
+            }
+        }
 
-		@media (max-width: 900px) {
-			position: fixed;
-			top: 0;
-			right: 0;
+        @media (max-width: 900px) {
+            position: fixed;
+            top: 0;
+            right: 0;
 
-			flex-flow: column nowrap;
+            flex-flow: column nowrap;
 
-			background-color: #fff;
-			border: $default-border;
-			color: $black !important;
+            background-color: #fff;
+            border: $default-border;
+            color: $black !important;
 
-			height: 100vh;
-			width: 250px;
-			padding-top: 3.5rem;
-			transition: transform 0.3s ease-in-out;
+            height: 100vh;
+            width: 250px;
+            padding-top: 3.5rem;
+            transition: transform 0.3s ease-in-out;
 
-			li {
-				color: $black;
-			}
-		}
-	}
+            li {
+                color: $black;
+            }
+        }
+    }
 }
 
 .disappear {
-	transform: none;
+    transform: none;
 }
 
 .appear {
-	transform: translate(100%);
+    transform: translate(100%);
 }
 
 @media (min-width: 900px) {
-	.appear,
-	.disappear {
-		transform: none;
-	}
+    .appear,
+    .disappear {
+        transform: none;
+    }
 
-	.header ul li {
-		padding: 0;
-		margin: 0 25px;
-	}
+    .header ul li {
+        padding: 0;
+        margin: 0 25px;
+    }
 }
